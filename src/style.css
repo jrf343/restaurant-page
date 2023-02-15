@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Fira Code';
+    src: url('Fira_Code_v6/woff2/FiraCode-SemiBold.woff2') format('woff2'),
+      url("Fira_Code_v6/woff/FiraCode-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+  }
+
+body {
+    background-color: palevioletred;
+    background-image: url('./images/kitchen.png');
+}
+
+.tabsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Fira Code';
+    font-size: 30px;
+    color: plum;
+}
+
+.tab {
+    background-image: url('./images/goldovalframe.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 10;
+    min-height: 100px;
+    min-width: 190px;
+    text-align: center;
+    line-height: 100px;
+    background-color: rgba(52, 31, 31, 0.61);
+    backdrop-filter: blur(1px);
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px palevioletred, 3px 3px 6px darkred;
+    transition: all 1s;
+}
+
+.tab:hover {
+    transform: scale(1.2);
+}
+
+.headingSection {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    min-height: 80px;
+}
+
+.headingTitle, h2 {
+    font-family: 'Fira Code';
+    font-size: 75px;
+    color: darkred;
+    text-align: center;
+    text-shadow: 1px 1px 2px palevioletred, 3px 3px 6px palevioletred;
+}
+
+.homepageContent, .contactContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Fira Code';
+    font-size: 20px;
+    color: palevioletred;
+    white-space: pre;
+    align-items: center;
+}
+
+.homepageBlurb, .hours, .contact {
+    background-color: rgba(52, 31, 31, 0.61);
+    backdrop-filter: blur(1px);
+    padding: 1%;
+    border-radius: 20px;
+    margin: 5px;
+    box-shadow: 1px 1px 2px palevioletred, 3px 3px 6px palevioletred;
+} 
+
+h2 {
+    font-size: 40px;
+    margin: 5px;
+}
+
+h3 {
+    font-size: 30px;
+    margin: 5px;
+}
